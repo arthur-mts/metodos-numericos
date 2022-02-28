@@ -32,10 +32,11 @@ def plu(A):
 
 def main():
     a = np.array([[1, 1, 1], [4, 4, 2], [2, 1, -1]], dtype=float)
+    b = np.array([1, 2, 0], dtype=float)
 
     p, l, u = plu(a)
 
-    res = p@l@u
+    res = p @ l @ u
     print(p)
 
 
